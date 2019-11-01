@@ -54,15 +54,126 @@
     padding-top: 50px;
     padding-bottom: 20px;
   }
-  .title, .frame{
-    display: block;
+ #faq {
+  display: flex;
+  justify-content:container;
+ }
+ .faq-container{
+  width: 80%;
+  margin: auto;
+ }
+ .faq-box h3{
+  color: #00AEFF;
+  padding: 15px 0;
+ }
+ .faq-box p{
+  color: #7B7C7D;
+ }
+ #faq-form{
+  width: 80%;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+ .faq-form{
+  text-align: center;
+  color: #084482;
+ }
+ .input-group{
+  padding-bottom: 20px;
+ }
+ input.form-control, textarea.form-control{
+  padding-left: 20px;
+ }
+ .form-control{
+  border-radius:0; 
+ }
+ textarea{
+  height: 300px!important;
+ }
+ .btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+ }
+ .msg-btn{
+  padding-top: 40px;
+ }
+  li{
+    list-style-type: none;
   }
-  .title{
-    padding-top: 50px;
+  footer{
+    padding-top: 30px;
+    background: #FAFAFA;
+    padding-left: 100px;
+    padding-right:50px; 
   }
-  .title h1{
-    color: #49A347
+  footer h4{
+    color: #275B92;
   }
+  footer span{
+    color: #00AEFF;
+  }
+  .follow{
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content:flex-start;
+  }
+  .follow li{
+    padding-right: 10px;
+    width: 50px; 
+    display: inline;
+  }
+  .follow li img{
+    width: 40px;
+  }
+  .bottom-footer{
+    background: #FAFAFA;
+    text-align: center;
+  }
+  .bottom-footer p{
+    color: #8898AA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .quick-links{
+    padding-left: 0;
+  }
+  .quick-links ul{
+    padding-left: 0;
+  }
+  .quick-links a{
+    color: #000000;
+    text-decoration: none;
+  }
+  .foot-er h4, .foot-er span, .foot-er li, .foot-er p{
+    font-size: 14px;
+  }
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
   </style>
 </head>
 <body>
@@ -86,17 +197,119 @@
           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           <li class="nav-item "><a class="nav-link join" href="#">Join HNG</a></li>
         </ul>
-      </div>
-      </nav>
+  </div>
+  </nav>
       <div class="container head-er">
         <h4>Frequently Asked Questions</h4>
         <p>Here are some of the most frequently asked questions on HNG 7.0</p>
       </div>
 
     </section>
+    <section id="faq">
+      <div class="faq-container">
+        <div class="faq-box">
+          <h3 class="accordion"> When will the internship start?</h3 class="accordion">
+          <p class="panel1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+        </div>
+        <div class="faq-box">
+          <h3 class="accordion">When will the internship start?</h3>
+          <p class="panel1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+        </div>
+        <div class="faq-box">
+          <h3 class="accordion">When will the internship start?</h3>
+          <p class="panel1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+        </div>
+        
+        <div class="faq-box">
+          <h3 class="accordion">When will the internship start?</h3>
+          <p class="panel1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+        </div> 
+      </div>    
+    </section>
+    <section id="faq-form">
+      <div class="faq-form">
+        <h3> Not a Frequently Asked Question? <br>Contact us below </h3>
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Name" class="form-control" >
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Email" class="form-control" >
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="Subject" class="form-control" >
+          </div>
+          <div class="input-group">
+            <textarea class="form-control" placeholder="Message"></textarea>
+          </div>
+          <div class="input-group msg-btn">
+            <button class="btn btn-primary form-control">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="foot-er">
+
+      <div>
+      <div><img src="brand-logo.png" ></div>
+      <div class="row">
+        <div class="col-md-3 quick-links">
+          <h4>Quick Links</h4>
+          <ul class="footer-li">
+            <li><a href="#">Join HNG</a></li>
+            <li><a href="#">About HNG</a></li>
+            <li><a href="#">Become Sponsor</a></li>
+            <li><a href="#">Signup as a Mentor</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 cont">
+          <h4>Contact Us</h4>
+            <span>Phone</span>
+            <p>+234 (0) 812 345 6789</p>
+            <span>Email</span>
+            <p>interns@hng.tech</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Office Address</h4>
+          <p>3 Birrel Avenue Sabo,Yaba, Lagos State</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Follow Us</h4>
+          <ul class="follow">
+            <li><a href=""><img src="img/twitter.png"></a></li>
+            <li><a href=""><img src="img/facebook.png"></a></li>
+            <li><a href=""><img src="img/dribble.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <div class="bottom-footer">
+      <p>&copy; 2019 HNG Internship. All rights reserved.</p>
+    </div>
   </main>
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
