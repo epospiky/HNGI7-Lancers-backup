@@ -13,10 +13,11 @@
   	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<title>faq</title>
 	<style type="text/css">
+
   .container-fluid {
     padding-left: 0;
     padding-right: 0;
-}
+    }
   #head{
     background: #D1F0F6;
     padding-right: 0!important;
@@ -107,6 +108,7 @@
     background: #FAFAFA;
     padding-left: 100px;
     padding-right:50px; 
+    padding-bottom: 50px;
   }
   footer h4{
     color: #275B92;
@@ -163,16 +165,26 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active {
-  background-color: #ccc;
-}
+
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
-  display: none;
+  display: none!important;
   overflow: hidden;
+}
+.accordion:after {
+  content: '\005E'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\0029"; /* Unicode character for "minus" sign (-) */
+  color: 
 }
   </style>
 </head>
